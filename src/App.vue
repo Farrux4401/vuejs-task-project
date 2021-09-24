@@ -12,6 +12,34 @@ export default {
   components: {
     Header,
   },
+
+  data() {
+    return {
+      tasks: [],
+    };
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: "Liverpool was created",
+        day: "march 1st 1989 at 2:30pm",
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: "Real Madrid was created",
+        day: "june 1st 1979 at 5:30pm",
+        reminder: true,
+      },
+      {
+        id: 3,
+        text: "Chelsea was created",
+        day: "january 5st 1969 at 8:30pm",
+        reminder: false,
+      },
+    ];
+  },
 };
 </script>
 
